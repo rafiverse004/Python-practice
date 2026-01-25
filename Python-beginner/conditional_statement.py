@@ -1,47 +1,68 @@
-# if elif else
+# Vote age check logic Check whether a person is eligible to vote.
 
-# Vote age check logic
 age = int(input("Your age: "))
-if age<18:
-    print("You can not vote for now")
-    print("Wait to become 18 kiddo")
-elif age>18: # this is just sort form of else-if
-    print("You can vote sir.")
-    print("You are good to go old people")
+
+if age < 18:
+    print("You cannot vote yet")
+elif age >= 18:
+    print("You can vote")
 else:
-    print("Wrong command, try again, No thank you")
+    print("Invalid age")
 
-# Signal light logic
-light = input("Light: ")
-if (light == "red"):
-    print("You can not go.")
-elif (light == "yellow"):
-    print("Prepare yourself within few second you are good to go")
-elif (light == "green"):
-    print("You can go now")
+
+# Traffic signal logic Decide action based on traffic light color.
+
+light = input("Light (red/yellow/green): ").lower()
+
+if light == "red":
+    print("Stop")
+elif light == "yellow":
+    print("Get ready")
+elif light == "green":
+    print("Go")
 else:
-    print("Light is broken ha ha ha")
+    print("Invalid signal")
 
-# Grades of student
-mark = int(input("marks: "))
-if(mark>=90):
-    print("A")
-elif(mark>=80 and mark<90):
-    print("B")
+
+# Grade calculation Assign grade based on marks.
+
+marks = int(input("Marks: "))
+
+if marks >= 90:
+    print("Grade: A")
+elif marks >= 80:
+    print("Grade: B")
 else:
-    print("Fail.")
+    print("Grade: Fail")
 
-"""Ternary operator
-    <variable> = <vablue1> if<condition> else<value2>
 
-    print(str1) if(condition) else(str2)
+"""
+TERNARY OPERATOR (ONE-LINE IF-ELSE)
+
+• Used for short conditions
+• Cleaner alternative to simple if-else
+
+Syntax:
+value_if_true if condition else value_if_false
 """
 
-"""Cleaver if / ternary operator
-    <variable> = (false_value, true_value) [condition]
+age = int(input("Age: "))
+status = "Adult" if age >= 18 else "Minor"
+print(status)
+
+
+"""
+CLEVER / INDEXED TERNARY OPERATOR
+
+• Uses indexing instead of if-else
+• True evaluates to 1, False evaluates to 0
+• Not recommended for beginners or real projects
+
+Syntax:
+(false_value, true_value)[condition]
 """
 
 salary = float(input("Salary: "))
-tax = salary*(0.1, 0.2) [salary<=50000]
-print(tax)
 
+tax = (salary * 0.2, salary * 0.1)[salary <= 50000]
+print("Tax:", tax)

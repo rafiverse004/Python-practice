@@ -1,63 +1,111 @@
+"""
+BASIC PYTHON SYNTAX AND CONCEPTS
+
+• print() is used to display output
+• Python is case-sensitive
+• Variables store data
+• Python automatically detects data types
+"""
+
+
+"""
+PRINTING OUTPUT
+"""
+
 print("Hello world.", "I am the new Python Programmer.")
-print("Hi i am rafik")
+print("Hi I am Rafik")
 print("I am 21 years old.")
 
-print("Sum of 5 + 10 is", 5+10)
+print("Sum of 5 + 10 is", 5 + 10)
 
-Name = "Rafi"
-Roll = 1
-Class = "Ha ha ha"
-print("My name is", Name, "My roll is", Roll, "I read in Class", Class)
 
-#Finding data types by computer
-print(type(Name))
-print(type(Roll))
-print(type(Class))
+"""
+VARIABLES AND DATA TYPES
+"""
 
-#Sum, devide, subtract, multiply of two numbers
+name = "Rafi"
+roll = 1
+class_name = "Ha ha ha"
+
+print("My name is", name, "My roll is", roll, "I read in class", class_name)
+
+print(type(name))
+print(type(roll))
+print(type(class_name))
+
+
+"""
+BASIC ARITHMETIC OPERATIONS
+"""
+
 a = 2
 b = 3
-sum = a + b
+
+sum_result = a + b
 difference = a - b
-multiply = a * b
-devide = a / b
-print("Sum: ", sum)
-print("Difference: ", difference)
-print("Multiplication: ", multiply)
-print("Devide: ", devide)
+multiplication = a * b
+division = a / b
 
-c = a**b # a to the power b
-print(c)
+print("Sum:", sum_result)
+print("Difference:", difference)
+print("Multiplication:", multiplication)
+print("Division:", division)
 
-#Expression Execution
-A,B = 2,3
-text = "@"
-text1 = "AtTheRate"
-print(2*text*3) #so we can multiply string with int
-print((text1+text)*A*B) #we can add string with +
+power = a ** b
+print("Power:", power)
 
-# using A//B will round up smaller or equal int number
+
+"""
+EXPRESSION EXECUTION WITH STRINGS
+"""
+
+A, B = 2, 3
+symbol = "@"
+word = "AtTheRate"
+
+print(2 * symbol * 3)
+print((word + symbol) * A * B)
+
+
+"""
+FLOOR DIVISION
+Returns integer part only
+"""
+
 A = 15
 B = 2
 C = A // B
 print(C)
 
+
+"""
+MODULUS OPERATOR WITH NEGATIVE NUMBER
+Result follows the sign of the divisor
+"""
+
 a = 5
 b = -2
-c = a % b # a plus b minus that is why c is minus other way all plus
+c = a % b
 print(c)
 
-# Single line commnet
-"""This is multi line comment 
-    in Python"""
 
-# Taking input from the user
+"""
+COMMENTS IN PYTHON
+
+• #  → single-line comment
+• ''' ''' or \"\"\" \"\"\" → multi-line comment
+"""
+
+
+"""
+USER INPUT AND TYPE CASTING
+"""
+
 name = input("Name: ")
-print("Hi our code champ ", name)
+print("Hi code champ", name)
 
-id = int(input("Id: "))
-print("Code champ we are giving you a id ", id)
+user_id = int(input("Id: "))
+print("Your id is", user_id)
 
 pi = float(input("Pi: "))
-print("Code champ do you know the value of pi is ", pi)
-
+print("Value of pi is", pi)

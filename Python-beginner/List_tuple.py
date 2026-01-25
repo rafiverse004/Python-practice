@@ -1,14 +1,11 @@
-marks1 = 55.55
-marks2 = 66.66
-marks3 = 77.77
-marks4 = 88.88
-marks5 = 99.99
-
 """
-we call this a list like array but inside 
-that we can store all types together in one list
-in string we not change anything but in a list we can change
+LISTS IN PYTHON
 
+• Lists are ordered collections
+• Lists are mutable (can be changed)
+• Can store multiple data types together
+• Similar to arrays, but more powerful
+• Indexing starts from 0
 """
 
 marks = [55.55, 66.66, 77.77, 88.88, 99.99]
@@ -21,35 +18,69 @@ print(students)
 print(type(students))
 print(len(students))
 
-"""
-list slicing
-list_name[starting_index: ending_index]
-List methods:
-
-list.append(something)
-list.sort()
-list.sort(reverse = true)
-list.reverse()
-list.insert(index, something)
 
 """
+LIST SLICING
+
+Syntax:
+list_name[start_index : end_index]
+
+• start_index is inclusive
+• end_index is exclusive
+"""
+
+print(marks[0:3])
+print(marks[2:])
+
+
+"""
+LIST METHODS
+
+list.append(value)        → add at end
+list.insert(index, value) → add at specific index
+list.sort()               → ascending order
+list.sort(reverse=True)   → descending order
+list.reverse()            → reverse the list
+"""
+
 print(marks)
-marks.sort(reverse = True)
+marks.sort(reverse=True)
 print(marks)
 
-# Tuple cannot change anything
+
+"""
+TUPLES IN PYTHON
+
+• Tuples are ordered
+• Tuples are immutable (cannot be changed)
+• Faster than lists
+• Written using ()
+"""
+
 students1 = (1, 2, 3, 4, 5)
 print(students1)
+print(type(students1))
+
 
 """
-tup.index(element)
-tup.count(element)
+TUPLE METHODS
+
+tup.index(element) → returns index
+tup.count(element) → count occurrences
 """
 
-# Task 1
-a = input("Mmovie1: ")
-b = input("Movie2: ")
-c = input("Movie3: ")
+print(students1.index(3))
+print(students1.count(2))
 
-Movies = [a, b, c]
-print("Movies: ", Movies)
+
+"""
+TASK
+Take 3 movie names from user and store them in a list
+"""
+
+a = input("Movie 1: ")
+b = input("Movie 2: ")
+c = input("Movie 3: ")
+
+movies = [a, b, c]
+print("Movies:", movies)
