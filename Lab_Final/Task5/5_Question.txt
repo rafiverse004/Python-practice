@@ -1,0 +1,28 @@
+You have most probably heard of Dora The Explorer. She likes to travel from one country to
+another. Currently, Dora is at Doraland. Doraland is a beautiful country, consisting of N cities
+and M bidirectional roads. Recently, Dora has started to learn Graph Algorithms. She knows
+about BFS and DFS. However, since Dora is still learning, she is not feeling so confident and
+asks for your help. Dora contacts you and gives you all the necessary information about
+Doraland. Dora will start her journey from city 1. Now, your task will be to help Dora to find a
+path which is similar to the path of BFS graph traversal.
+Input:
+The given map will be an undirected and unweighted graph. The first line contains two integers
+N and M (1 <= N, M <= 100)— the number of cities and the total number of roads.
+The next M lines will contain two integers ui, vi (1 <= ui, vi <=N) — denoting there is a
+bidirectional road between ui and vi.
+Output
+Print the BFS path traversal which Dora will follow to explore the city, starting from city 1.
+
+
+After successful BFS traversal, Dora wants to visit the whole country again. However, this time
+Dora wants to traverse the country following the path which is similar to the path of DFS graph
+traversal.
+Yes, you guessed it correctly. You have to help Dora this time also.
+The input format remains the same as Task 02. Dora will start her journey from city 1 again.
+Input
+The given map will be an undirected and unweighted graph. The first line contains two integers
+N and M (1 <= N, M <= 100) — the number of cities and the total number of roads. The next M
+lines will contain two integers ui, vi (1 <= ui, vi <= N) — denoting there is a bidirectional road
+between ui and vi.
+Output
+Print the DFS path traversal which Dora will follow to explore the city, starting from city 1.

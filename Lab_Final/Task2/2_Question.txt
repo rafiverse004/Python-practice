@@ -1,0 +1,17 @@
+Suppose you are given a task to rank the students. You have gotten the marks and id of the
+students. Now your task is to rank the students based on their marks using a sorting algorithm.
+
+However, you have to keep in mind that your sorting algorithms perform the minimum
+number of swapping operations.
+
+Input:
+The first line of the input file will contain an integer N ( 1 ≤ N ≤ 1000 ).
+The second line will contain N integers, representing the Student ID, Si ( 1 ≤ Si ≤ 1000 ). The
+next line will contain the N integer, Sm ( 1 ≤ Sm ≤ 1000 ), which denotes the obtained mark of
+the corresponding students.
+
+Output:
+Write a print statement that prints (Work has been done).
+You have to show the Student Id and obtained marks in descending order based on their obtained
+mark. If two or more students get the same mark, then students with the lower ID will get
+prioritized. See the input and output for a better understanding.

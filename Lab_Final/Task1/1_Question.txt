@@ -1,0 +1,10 @@
+Apply selection sort, insertion sort, bubble sort algorithm to sort the number like below:
+5
+3 2 1 4 5
+
+For Bubble Sort,
+Its run time complexity is θ(n2). Change the code in a way so that its time complexity is
+θ(n) for the best-case scenario.
+You have to explain how you have achieved the θ(n) for the best-case scenario in a
+comment block of your code.
+For the input 2, your code should run at θ(n).

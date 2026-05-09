@@ -1,0 +1,20 @@
+Alice and Bob are two friends. Alice has a sorted list in ascending order of length N. On the
+other and, Bob has a sorted list of length M. Now, they want to make a sorted list of N+M length
+in ascending order. However, they are not very good at algorithms. Hence, they asked for your
+help.
+
+Since you are a computer science student, your task is to come up with an efficient algorithm. In
+the following, let n = N+M.
+
+1) Find a solution which runs in O(nlogn).
+2) Come up with a solution which runs in O(n).
+
+Input
+The first line contains an integer N (1 <= N <= 105), denoting the length of Alice’s sorted list. In
+the next line, there will be N integers separated by space. The third line contains another integer
+M (1 <= M <= 105), denoting the length of Bob’s sorted list. In the next line, there will be M
+integers separated by space.
+
+Output:
+You have to make a sorted list in ascending order from the given lists in ascending order and
+show the output.

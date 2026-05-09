@@ -1,0 +1,27 @@
+A) You are given a directed weighted Graph, G. The graph consists of N vertices and M edges.
+In this problem, you have to store the graph using Adjacency Matrix and print the matrix.
+Input:
+The first line contains two integers N and M (1 <= N, M <= 100)— the number of vertices and
+the
+total
+number
+of
+edges.
+The
+next
+M
+lines
+will
+contain
+three
+integers
+—
+denoting
+there
+is
+an
+edge between node
+𝑠�𝑖, 𝑠�𝑖, 𝑠�𝑖 (1 < 𝑠�𝑖, 𝑠�𝑖≤𝑁, 1≤𝑠�𝑖≤1000)
+𝑠�𝑖 𝑎𝑛𝑐� 𝑠�𝑖 𝑠�𝑖𝑠�ℎ 𝑠�ℎ𝑐� 𝑐𝑛�𝑠𝑠� 𝑠�𝑖.
+Output:
+You have to make the graph using Adjacency Matrix, and print the Adjacency Matrix in output.
